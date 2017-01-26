@@ -1,4 +1,5 @@
 require 'existence/array'
 require 'existence/false_class'
+require 'existence/hash'
 require 'existence/nil_class'
 require 'existence/true_class'
