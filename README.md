@@ -24,7 +24,7 @@ An array is `present?` if it has elements, and `blank?` if it does not.
 [].present? # => false
 ['test'].present? # => true
 [].blank? # => true
-['test'].blank? # => true
+['test'].blank? # => false
 ```
 
 ### `FalseClass`
