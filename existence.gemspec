@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.license = 'MIT'
   spec.files = Dir['lib/**/*.rb']
 
-  spec.required_ruby_version = '~> 2'
+  spec.required_ruby_version = '>= 2'
 
   spec.add_development_dependency 'minitest', '~> 5'
-  spec.add_development_dependency 'rake', '~> 12'
+  spec.add_development_dependency 'rake', '~> 13'
 end
