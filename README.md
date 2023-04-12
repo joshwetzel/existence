@@ -1,5 +1,4 @@
 [![Gem Version](https://badge.fury.io/rb/existence.svg)](https://badge.fury.io/rb/existence)
-[![Build Status](https://travis-ci.org/joshwetzel/existence.svg?branch=master)](https://travis-ci.org/joshwetzel/existence)
 
 # Existence
 Existence is a simple Ruby library that exposes Active Support's `present?` and `blank?` methods to the following
