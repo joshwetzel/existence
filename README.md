@@ -27,6 +27,11 @@ gem "existence"
 nil.present?       # => false
 nil.blank?         # => true
 
+0.present?         # => true
+1.present?         # => true
+0.blank?           # => false
+1.blank?           # => false
+
 true.present?      # => true
 true.blank?        # => false
 false.present?     # => false
