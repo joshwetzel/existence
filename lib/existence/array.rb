@@ -5,5 +5,5 @@ class Array
     !empty?
   end
 
-  alias_method :blank?, :empty?
+  alias blank? empty?
 end
