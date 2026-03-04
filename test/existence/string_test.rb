@@ -3,8 +3,8 @@
 require 'test_helper'
 
 class StringTest < Minitest::Test
-  PRESENT = ['test', 'test ', ' test', ' test ']
-  BLANK = ['', ' ', '   ', "  \n\t  \r "]
+  PRESENT = ['test', 'test ', ' test', ' test '].freeze
+  BLANK = ['', ' ', '   ', "  \n\t  \r "].freeze
 
   def test_present
     PRESENT.each { |value| assert_predicate value, :present? }
