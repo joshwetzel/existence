@@ -6,6 +6,6 @@ class String
   end
 
   def blank?
-    self.strip.empty?
+    strip.empty?
   end
 end
