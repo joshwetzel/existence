@@ -1,15 +1,23 @@
-require File.expand_path('../lib/existence/version', __FILE__)
+# frozen_string_literal: true
+
+require_relative "lib/existence/version"
 
 Gem::Specification.new do |spec|
-  spec.name = 'existence'
+  spec.name = "existence"
   spec.version = Existence::VERSION
-  spec.summary = 'Exposes present? and blank? to common Ruby classes.'
-  spec.author = 'Josh Wetzel'
-  spec.license = 'MIT'
-  spec.files = Dir['lib/**/*.rb']
+  spec.authors = ["Josh Wetzel"]
 
-  spec.required_ruby_version = '>= 2'
+  spec.summary = "Lightweight presence and blank checks without ActiveSupport"
+  spec.homepage = "https://github.com/joshwetzel/existence"
+  spec.license = "MIT"
+  spec.required_ruby_version = ">= 3.2"
 
-  spec.add_development_dependency 'minitest', '~> 5'
-  spec.add_development_dependency 'rake', '~> 13'
+  spec.metadata["homepage_uri"] = spec.homepage
+  spec.metadata["source_code_uri"] = spec.homepage
+
+  spec.files = Dir["lib/**/*.rb", "LICENSE", "README.md"]
+  spec.require_paths = ["lib"]
+
+  spec.add_development_dependency "minitest"
+  spec.add_development_dependency "rake"
 end
