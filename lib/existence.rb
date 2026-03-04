@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'existence/array'
 require 'existence/false_class'
 require 'existence/hash'
