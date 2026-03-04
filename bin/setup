@@ -2,17 +2,14 @@
 # frozen_string_literal: true
 
 require 'fileutils'
-require 'pathname'
 
-include FileUtils
-
-APP_ROOT = Pathname.new(File.expand_path('..', __dir__))
+APP_ROOT = File.expand_path('..', __dir__)
 
 def system!(*args)
   system(*args) || abort("Command #{args} failed!")
 end
 
-chdir APP_ROOT do
+FileUtils.chdir APP_ROOT do
   puts 'Installing gems...'
   system! 'gem install bundler --conservative &> /dev/null'
   system! 'bundle install --quiet'
