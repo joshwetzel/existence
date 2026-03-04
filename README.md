@@ -32,6 +32,9 @@ nil.blank?         # => true
 0.blank?           # => false
 1.blank?           # => false
 
+:foo.present?      # => true
+:foo.blank?        # => false
+
 true.present?      # => true
 true.blank?        # => false
 false.present?     # => false
